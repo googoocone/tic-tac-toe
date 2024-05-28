@@ -1,9 +1,7 @@
-import {useState} from 'react';
+import { useState } from "react";
 
-
-
-export default function GameBoard({board, onHandleGameTurn}) {
-  console.log('board', board)
+export default function GameBoard({ board, onHandleGameTurn }) {
+  console.log("board", board);
 
   return (
     <ol id="game-board">
@@ -12,7 +10,9 @@ export default function GameBoard({board, onHandleGameTurn}) {
           <ol>
             {row.map((col, colIndex) => (
               <li key={colIndex}>
-                <button onClick={() => onHandleGameTurn(rowIndex, colIndex)}>{col}</button>
+                <button disabled={col !== null} onClick={() => onHandleGameTurn(rowIndex, colIndex)}>
+                  {col}
+                </button>
               </li>
             ))}
           </ol>
