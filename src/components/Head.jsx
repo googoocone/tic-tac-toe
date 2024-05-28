@@ -1,4 +1,4 @@
-import logoImg from '../../public/game-logo.png'
+import logoImg from "../../public/game-logo.png"
 
 export default function Head() {
   return (
