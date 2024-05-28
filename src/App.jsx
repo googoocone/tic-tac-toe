@@ -1,10 +1,21 @@
+import Head from "./components/Head";
 
 function App() {
-  
-
   return (
-    <h1>React Tic-Tac-Toe</h1>
-  )
+    <>
+      <Head></Head>
+      <main>
+        <div id="game-container">
+          <ol id="players" className="highlight-player">
+            player
+          </ol>
+
+          gameboard
+        </div>
+        log
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
